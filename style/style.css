@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+/*HEADER*/
+header{
+    position: sticky;
+    top: 0;
+    background-color: #F8F4EC ;
+}
+.nav-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    font-family: maru-font;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color:rgb(118, 156, 123);
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    font-family: maru-font2;
+    font-weight:bold;
+}
+a{
+    text-decoration: none;
+    color: #3B3B3B;
+}
+
+/*BODY*/
+body {
+    margin: 0px;
+    background-color:#F8F4EC;
+}
+
+/*------------------------HOME------------------------------*/
+.carousel-main{
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.carousel-home{
+width: 70vw;
+}
+.carousel-img{
+    height: 80vh;
+    border-radius: 30px;    
+}
+.imagenes-mobile{
+    display: none;
+}
+
+/*---------------------PRODUCTOS----------------------------*/
+.productos-deportivos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+/*imagenes producto*/
+main div img{
+    height: 60vh;
+} 
+.card-producto1, .card-producto4 {
+    justify-self: end; 
+}
+
+.card-producto3, .card-producto6{
+    justify-self: start;
+}
+.nombre{
+    font-family: maru-font2;
+    margin: 0;
+    font-weight: bold;
+}
+.precio{
+    font-family: maru-font2;
+    margin: 0;
+}
+.footer-productos{
+    padding: 15px;
+}
+/*--------------------NEWSLETTER-----------------------------*/
+.form_suscripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#9CBFAF;
+    padding: 10px;
+    font-family: maru-font2;
+    font-weight:bold;
+}
+.titulo-subs{
+    margin: 0;
+}
+.form-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw; 
+    height: 50vh ;
+    margin: auto;
+}
+.banner-content{
+    padding: 10px;
+    border-radius: 50px;
+    max-width: 70vw; 
+    height: 50vh ;
+    margin: auto;
+}
+.boton-enviar{
+        border: none;
+    box-shadow: none;
+}
+
+/*--------------------NOSOTROS--------------------------*/
+.nosotros-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.descripcion-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 80vh;
+    text-align: center;
+}
+.carousel-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-nosotros{
+    width: 35vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+/*--------------------CONTACTO--------------------------*/
+.contacto-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.maps-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+}
+div label { 
+    padding: 3px;
+}
+div input, div textarea {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+.boton-choose{
+    border: none;
+    box-shadow: none;
+}
+
+
+
+/*FOOTER*/
+.social-media{
+    display: flex;
+    justify-content: center;
+
+}
+.whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 8vh;
+}
+nav a img {
+    height: 4vh;
+    width: auto;
+    padding: 5px;
+}
+.copyright{
+    text-align: center;
+    font-family: maru-font2;
+    font-size: 12px;
+    margin:0;
+    font-weight: bold;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: maru-font;
+    src: url(/assets/DMSerifText-Italic.ttf);
+}
+
+@font-face {
+    font-family: maru-font2;
+    src: url(/assets/Outfit-Thin.ttf);
+}
+
+/*----------------------mobile index---------------------------*/
+
+/*----------------------HEADER---------------------------------*/
+@media (max-width: 767px){
+    header{
+        padding: 15px;
+    }
+    .nav-elements{
+        display: flex;
+        flex-direction: column;
+
+    }
+    h1{
+    font-family: maru-font;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    font-family: maru-font2;
+    font-weight:bold;
+}
+}
+    
+/*------------------------------MAIN----------------------------*/
+@media (max-width: 767px) {
+.carousel-desktop{
+    display: none;
+}
+.imagenes-mobile{
+    display: flex;
+}
+}
+/*-------------------------FOOTER MOBILE----------------------------*/
+@media (max-width: 767px){
+.social-media{
+height: 25px;
+}
+
+.whatsapp{
+    height: 6vh;
+}
+nav a img {
+
+    height: 3vh;
+    padding: 5px;
+}
+.copyright{
+    font-size: 9px;
+}
+}
+
+/*----------------------mobile productos---------------------------*/
+@media (max-width: 767px){
+header{
+    position: sticky;
+    top: 0;
+    background-color: #F8F4EC ;
+}
+.productos-deportivos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+/*imagenes producto*/
+main div img{
+    height: 45vh;
+    width: 65vw;
+} 
+.basket-2,.tennis-2{
+    height: 23vh;
+}
+.nombre{
+    font-family: maru-font2;
+    margin: 0;
+    font-weight: bold;
+}
+.precio{
+    font-family: maru-font2;
+    margin: 0;
+}
+
+}
